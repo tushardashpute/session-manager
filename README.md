@@ -6,6 +6,7 @@
 **Why use Session Manager?**
 
 It is well known that we can not directly connect to a private EC2 instance unless there is VPN Connectivity or Direct Connect or other network connectivity source with the VPC. A common approach to connect to an EC2 instance on a private subnet of your VPC is to use a Bastion Host.
+
 A Bastion Host is a server whose purpose is to provide access to a private network from an external network (such as the Internet). Because of its exposure to potential attacks, a bastion host must minimize the chances of penetrations. When using a bastion host, you log into the bastion host first, and then into your target private instance. With this approach, only the bastion host will have an external IP address.
 
 However, there are some drawbacks:
