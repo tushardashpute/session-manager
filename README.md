@@ -10,10 +10,10 @@ A Bastion Host is a server whose purpose is to provide access to a private netwo
 
 However, there are some drawbacks:
 
-    You will need to allow SSH inbound rule at your bastion
-    You need to open ports on your private EC2 instance in order to connect it to your bastion
-    You will need to manage the SSH key credentials of your users: You will need to generate an ssh key pair for each user or get a copy of the same SSH key for your users
-    Cost: The bastion host also has a cost associated with it as it is a running EC2 instance. Even a t2.micro costs about $10/month.
+ - You will need to allow SSH inbound rule at your bastion
+ - You need to open ports on your private EC2 instance in order to connect it to your bastion
+ - You will need to manage the SSH key credentials of your users: You will need to generate an ssh key pair for each user or get a copy of the same SSH key for your users
+ - Cost: The bastion host also has a cost associated with it as it is a running EC2 instance. Even a t2.micro costs about $10/month.
 
 
 Session Manager can be used to access instances within private subnets that allow no ingress from the internet. AWS SSM provides the ability to establish a shell on your systems through its native service, or by using it as a tunnel for other protocols, such as Secure Shell (SSH). 
